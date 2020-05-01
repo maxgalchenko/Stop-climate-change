@@ -1,0 +1,43 @@
+@import '../../global/global.scss';
+
+.Stories {
+  background-color: $white;
+  padding: 36px 32px 72px;
+  .carousel {
+    margin-top: -20px;
+    z-index: 1;
+  }
+  .story {
+    img {
+      display: block;
+      margin-bottom: 32px;
+      width: 100%;
+    }
+    &__descr {
+      padding: 30px 32px;
+      background-color: $darkBlue;
+      margin-bottom: 32px;
+      color: $white;
+      font-size: 22px;
+      line-height: 1.2em;
+      @extend %font__normal--bold;
+      text-align: center;
+    }
+    &__preview {
+      margin-bottom: 16px;
+    }
+  }
+  .carousel-indicators {
+    bottom: -13px;
+  }
+  .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid $darkBlue;
+    background-color: $white;
+  }
+  .carousel-indicators .active {
+    background-color: $darkBlue;
+  }
+}

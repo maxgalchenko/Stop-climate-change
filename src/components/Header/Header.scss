@@ -1,0 +1,12 @@
+@import '../../global/global';
+
+.Header {
+  background-color: $white;
+  padding: 32px;
+  .titleNavWrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+}

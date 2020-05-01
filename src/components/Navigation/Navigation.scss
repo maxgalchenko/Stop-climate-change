@@ -1,0 +1,15 @@
+@import '../../global/global';
+
+.Navigation {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  a {
+    @extend %font__normal--light;
+    font-size: 14px;
+    color: $darkBlue;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../global/global.scss';
+
+.HungerIssue {
+  padding: 64px 32px 32px;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .didYouKnow {
+    &__item {
+      background-color: $white;
+      padding: 24px 32px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    &__socialIcon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: $green;
+      position: relative;
+      min-width: 32px;
+      margin-left: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+    .socialIcon--twitter {
+      background-image: url('./images/twitter.svg');
+      background-size: 20px;
+    }
+    .socialIcon--facebook {
+      background-image: url('./images/facebook.svg');
+      background-size: 10px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

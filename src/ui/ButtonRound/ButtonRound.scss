@@ -1,0 +1,14 @@
+@import '../../global/global';
+
+.ButtonRound {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: $green;
+  color: $darkBlue;
+  position: relative;
+  margin: auto;
+  @extend %font__normal--bold;
+}

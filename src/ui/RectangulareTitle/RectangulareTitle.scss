@@ -1,0 +1,19 @@
+@import '../../global/global';
+
+.RectangulareTitle {
+  width: 160px;
+  height: 40px;
+  background-color: $darkBlue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @extend %font__normal--light;
+  font-size: 14px;
+  color: $white;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}

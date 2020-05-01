@@ -1,0 +1,7 @@
+@import '../../global/global';
+
+.BigTitle {
+  color: $darkBlue;
+  @extend %font__normal--bold;
+  line-height: 1.2em;
+}

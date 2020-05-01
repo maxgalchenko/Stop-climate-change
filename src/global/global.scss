@@ -1,0 +1,29 @@
+
+
+$white: #ffffff;
+$green: #c1f7d5;
+$darkBlue: #354463;
+
+%font__pencil {
+  font-family: flood-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%font__normal--light {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+%font__normal--regular {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%font__normal--bold {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
