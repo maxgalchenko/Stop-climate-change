@@ -1,10 +1,17 @@
-@import './global/global';
 @import '~bootstrap/scss/bootstrap';
+@import './global/global';
 
 body {
   margin: 0;
   padding: 0;
+}
+footer,
+header,
+body {
+  @extend %font__normal--light;
+  color: $darkBlue;
   font-size: 14px;
+  line-height: 1.4em;
 }
 
 a {
@@ -30,6 +37,10 @@ h6 {
   margin: 0;
 }
 
+button {
+  padding: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -37,6 +48,14 @@ img {
 
 p {
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .App {

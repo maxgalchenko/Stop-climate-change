@@ -27,8 +27,6 @@ const Stories = () => {
       <ButtonRound
         text='Read more'
         fontSize='18px'
-        width='156px'
-        height='40px'
         marginBottom='28px'
       />
     </Carousel.Item>

@@ -1,0 +1,28 @@
+@import '../../global/global.scss';
+
+.Footer {
+  padding: 67px 32px 55px;
+  background-color: $white;
+  .row1 {
+    margin-bottom: 78px;
+  }
+  .row2 { 
+    margin-bottom: 58px;
+  }
+  .contactUs {
+    box-sizing: border-box;
+    width: 50%;
+    a {
+      display: block;
+    }
+  }
+  .row ul {
+    width: 50%;
+    a {
+      text-decoration: underline;
+    }
+  }
+  .pencilTitleWrap {
+    text-align: right;
+  }
+}

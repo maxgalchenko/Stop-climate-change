@@ -2,9 +2,8 @@ import React from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import { BrowserRouter } from 'react-router-dom';
-import StopClimateChange from './components/StopClimateChange/StopClimateChange';
-import HungerIssue from './components/HungerIssue/HungerIssue';
-import Stories from './components/Stories/Stories';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home';
 
 const App = () => {
   return (
@@ -12,13 +11,11 @@ const App = () => {
       <div className='App'>
         <Header />
 
-        <StopClimateChange />
-        <HungerIssue />
-        <Stories />
+        <Home />
+        <Footer />
       </div>
     </BrowserRouter>
   );
 };
 
 export default App;
- 

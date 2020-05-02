@@ -1,0 +1,32 @@
+@import '../../global/global.scss';
+
+.Subscribe {
+  padding: 36px 32px 32px;
+  background-color: $green;
+  input,
+  button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+  }
+  input {
+    width: 55%;
+    background-color: $white;
+    padding: 0 16px;
+    color: $darkBlue;
+    &::placeholder { 
+      @extend %font__normal--light;
+      color: $darkBlue;
+    }
+  }
+  button {
+    width: 40%;
+    @extend %font__normal--bold;
+    font-size: 16px;
+    justify-content: center;
+    background-color: $darkBlue;
+    color: $green;
+  }
+}
