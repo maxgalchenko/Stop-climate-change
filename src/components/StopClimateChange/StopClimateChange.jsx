@@ -1,104 +1,17 @@
 import React from 'react';
-import './StopClimateChange.scss';
 import PencilTitle from '../../ui/PencilTitle/PencilTitle';
-import RectangulareTitle from '../../ui/RectangulareTitle/RectangulareTitle';
-import BigTitle from '../../ui/BigTitle/BigTitle';
-import { Link } from 'react-router-dom';
-import SmallText from '../../ui/SmallText/SmallText';
-import { postImg1, postImg2, postImg3 } from './images/index';
-import ButtonRound from '../../ui/ButtonRound/ButtonRound';
 
-const StopClimateChange = () => {
-  const takeActionData = [
-    {
-      title: 'Learn',
-      descr: 'Get the facts about this issue and how we’re helping.',
-    },
-    {
-      title: 'Volunteer',
-      descr: 'Find out about upcoming events that need your help.',
-    },
-    {
-      title: 'Share',
-      descr: 'Let your social media networks know about this important cause.',
-    },
-    {
-      title: 'Donate',
-      descr: 'Help us raise money to make a big difference with this issue.',
-    },
-  ];
+const StopClimateChange = ({ color, marginBottom }) => {
+  const pencilTitleData = ['#stop', 'climate', 'change'];
 
-  const whatWeDoData = [
-    {
-      src: postImg1,
-      title: 'Tree Planting Initiatives',
-    },
-    {
-      src: postImg2,
-      title: 'Education and Training',
-    },
-    { src: postImg3, title: 'Advocacy and Campaigning', descr: '' },
-  ];
-
-  const renderTakeActionList = takeActionData.map(({ title, descr }, index) => (
-    <li className='takeAction__item' key={index}>
-      <BigTitle text={title} marginBottom='10px' />
-      <SmallText text={descr} />
-    </li>
-  ));
-
-  const renderWhatWeDoList = whatWeDoData.map(({ src, title }, index) => (
-    <li className='whatWeDo__item'>
-      <img className='whatWeDo__img' src={src} alt='' />
-      <BigTitle text={title} marginBottom='22px' />
-      <SmallText
-        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet.'
-        marginBottom='31px'
-      />
-      <ButtonRound
-        text='Read more'
-        fontSize='16px'
-        width='152px'
-        height='40px'
-      />
-    </li>
+  const renderPencilTitle = pencilTitleData.map((item, index) => (
+    <PencilTitle key={index} text={item} color={color} />
   ));
 
   return (
-    <section className='StopClimateChange'>
-      <section className='issueBlock'>
-        <PencilTitle text='#stop climate change' marginBottom='136px' />
-
-        <div className='card'>
-          <RectangulareTitle text='THE ISSUE' marginBottom='36px' />
-          <BigTitle
-            text='Climate change poses the biggest threat to women in developing nations.'
-            fontSize='22px'
-            textAlign='center'
-            marginBottom='33px'
-          />
-
-          <Link to='/readMore' className='readMore'>
-            Read more about this environmental and social cause
-          </Link>
-        </div>
-      </section>
-
-      <section className='takeAction'>
-        <RectangulareTitle text='TAKE ACTION' marginBottom='47px' />
-        <ul>{renderTakeActionList}</ul>
-      </section>
-
-      <section className='whatWeDo'>
-        <h3 className='whatWeDo__title'>WHAT WE DO</h3>
-        <p className='whatWeDo__mission'>
-          Our mission is to create sustainable work for women in developing
-          nations while helping to slow climate change.
-        </p>
-
-        <ul className='whatWeDo__list'>{renderWhatWeDoList}</ul>
-      </section>
-    </section>
+    <div className='StopClimateChange' style={{ marginBottom }}>
+      {renderPencilTitle}
+    </div>
   );
 };
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import './HungerIssue.scss';
+import './DidYouKnow.scss';
 import PencilTitle from '../../ui/PencilTitle/PencilTitle';
 import ButtonRound from '../../ui/ButtonRound/ButtonRound';
 import RectangulareTitle from '../../ui/RectangulareTitle/RectangulareTitle';
 import BigTitle from '../../ui/BigTitle/BigTitle';
 import SmallText from '../../ui/SmallText/SmallText';
 
-const HungerIssue = () => {
+const DidYouKnow = () => {
   const didYouKnowData = [
     {
       title: '3 out of 4',
@@ -41,7 +41,7 @@ const HungerIssue = () => {
   ));
 
   return (
-    <section className='HungerIssue'>
+    <section className='DidYouKnow'>
       <PencilTitle
         text='Climate change Is a hunger issue.'
         marginBottom='18px'
@@ -64,4 +64,4 @@ const HungerIssue = () => {
   );
 };
 
-export default HungerIssue;
+export default DidYouKnow;

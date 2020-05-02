@@ -4,15 +4,18 @@ import Header from './components/Header/Header';
 import { BrowserRouter } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
+import About from './pages/About';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className='App'>
-        <Header />
+        {/* <Header /> */}
 
-        <Home />
-        <Footer />
+        {/* <Home /> */}
+        <About />
+
+        {/* <Footer /> */}
       </div>
     </BrowserRouter>
   );

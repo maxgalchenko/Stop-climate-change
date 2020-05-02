@@ -1,0 +1,13 @@
+@import '../../global/global.scss';
+
+.AboutIssue {
+  padding: 32px;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $green;
+  &__card {
+    padding: 0 32px 24px;
+    background-color: white;
+  }
+}

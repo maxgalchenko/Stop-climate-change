@@ -3,7 +3,7 @@ import './Footer.scss';
 import { Row, Container } from 'react-bootstrap';
 import SmallText from '../../ui/SmallText/SmallText';
 import Logo from '../Logo/Logo';
-import PencilTitle from '../../ui/PencilTitle/PencilTitle';
+import StopClimateChange from '../StopClimateChange/StopClimateChange';
 
 const Footer = () => {
   const followUsData = [
@@ -20,8 +20,6 @@ const Footer = () => {
     { title: 'Latest news', href: 'Medium.com' },
   ];
 
-  const pencilTitleData = ['#stop', 'climate', 'change'];
-
   const renderFolowUsList = followUsData.map(({ title, href }, index) => (
     <li key={index}>
       <a href={href} target='_blank' rel='noopener noreferrer'>
@@ -36,10 +34,6 @@ const Footer = () => {
         {title}
       </a>
     </li>
-  ));
-
-  const renderPencilTitle = pencilTitleData.map((item, index) => (
-    <PencilTitle key={index} text={item} fontSzie='44px' color='#354463' />
   ));
 
   return (
@@ -78,7 +72,7 @@ const Footer = () => {
           </ul>
         </Row>
 
-        <div className='pencilTitleWrap'>{renderPencilTitle}</div>
+        <StopClimateChange color='#354463' />
       </Container>
     </footer>
   );
