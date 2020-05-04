@@ -1,7 +1,7 @@
 import React from 'react';
 import './Stories.scss';
 import { Carousel } from 'react-bootstrap';
-import RectangulareTitle from '../../ui/RectangulareTitle/RectangulareTitle';
+import RectangularTitle from '../../ui/RectangularTitle/RectangularTitle';
 import SmallText from '../../ui/SmallText/SmallText';
 import ButtonRound from '../../ui/ButtonRound/ButtonRound';
 import img1 from './images/img1.jpg';
@@ -24,17 +24,13 @@ const Stories = () => {
         />
       </div>
 
-      <ButtonRound
-        text='Read more'
-        fontSize='18px'
-        marginBottom='28px'
-      />
+      <ButtonRound text='Read more' fontSize='18px' marginBottom='28px' />
     </Carousel.Item>
   );
 
   return (
     <section className='Stories'>
-      <RectangulareTitle text='STORIES' transform='translateY(0)' />
+      <RectangularTitle text='STORIES' transform='translateY(0)' />
 
       <Carousel className='Stories__carousel' controls={false}>
         {carouselItem}

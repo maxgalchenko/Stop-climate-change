@@ -3,7 +3,7 @@
 .OurTeam {
   padding: 32px 32px 0;
   background-color: $white;
-  .RectangulareTitle {
+  .RectangularTitle {
     margin-bottom: 30px;
     transform: translateY(0);
   }
@@ -23,13 +23,13 @@
   }
   &__item {
     width: 45%;
-    margin-bottom: 32px; 
+    margin-bottom: 32px;
     figcaption {
       padding: 16px;
       background-color: $darkBlue;
       color: $white;
       position: relative;
       z-index: 0;
-    } 
+    }
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './MissionValues.scss';
-import RectangulareTitle from '../../ui/RectangulareTitle/RectangulareTitle';
+import RectangularTitle from '../../ui/RectangularTitle/RectangularTitle';
 import BigTitle from '../../ui/BigTitle/BigTitle';
 import SmallText from '../../ui/SmallText/SmallText';
 
@@ -33,7 +33,8 @@ const MissionValues = () => {
     },
     {
       title: 'Plant new seeds',
-      descr: 'Donec a maximus ligula. Mauris consequat sapien lectus, eu aliquam sem cursus. ',
+      descr:
+        'Donec a maximus ligula. Mauris consequat sapien lectus, eu aliquam sem cursus. ',
     },
     {
       title: 'Lend a hand',
@@ -54,14 +55,14 @@ const MissionValues = () => {
         key={index}
       >
         <b>{title}</b>
-        <SmallText text={descr} color='white'/>
+        <SmallText text={descr} color='white' />
       </li>
     )
   );
 
   return (
     <section className='MissionValues'>
-      <RectangulareTitle text='MISSION & VALUES' />
+      <RectangularTitle text='MISSION & VALUES' />
 
       <BigTitle text='We strive for better environmental management, community empowerment, and livelihood improvement using tree-planting as an entry point.' />
       <ul className='MissionValues__list'>{renderMissionValuesList}</ul>

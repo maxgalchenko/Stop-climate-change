@@ -2,7 +2,6 @@ import React from 'react';
 import DidYouKnow from '../components/DidYouKnow/DidYouKnow';
 import Stories from '../components/Stories/Stories';
 import LetsTake from '../components/LetsTake/LetsTake';
-import Subscribe from '../components/Subscribe/Subscribe';
 import HomeIssue from '../components/HomeIssue/HomeIssue';
 
 const Home = () => {
@@ -13,7 +12,6 @@ const Home = () => {
       <DidYouKnow />
       <Stories />
       <LetsTake />
-      <Subscribe />
     </main>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import './LetsTakeArticle.scss';
-import RectangulareTitle from '../../../ui/RectangulareTitle/RectangulareTitle';
+import RectangularTitle from '../../../ui/RectangularTitle/RectangularTitle';
 import BigTitle from '../../../ui/BigTitle/BigTitle';
 import SmallText from '../../../ui/SmallText/SmallText';
 import ButtonRound from '../../../ui/ButtonRound/ButtonRound';
@@ -8,7 +8,7 @@ import ButtonRound from '../../../ui/ButtonRound/ButtonRound';
 const LetsTakeArticle = ({ rectangularText, src, bigTitleText, smallText }) => {
   return (
     <article className='LetsTakeArticle'>
-      <RectangulareTitle
+      <RectangularTitle
         text={rectangularText}
         transform='translateY(0)'
         color='#354463'

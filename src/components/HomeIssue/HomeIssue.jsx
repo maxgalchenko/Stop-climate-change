@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomeIssue.scss';
-import RectangulareTitle from '../../ui/RectangulareTitle/RectangulareTitle';
+import RectangularTitle from '../../ui/RectangularTitle/RectangularTitle';
 import BigTitle from '../../ui/BigTitle/BigTitle';
 import { Link } from 'react-router-dom';
 import SmallText from '../../ui/SmallText/SmallText';
@@ -42,7 +42,7 @@ const HomeIssue = () => {
 
   const renderTakeActionList = takeActionData.map(({ title, descr }, index) => (
     <li className='takeAction__item' key={index}>
-      <BigTitle text={title} marginBottom='10px' />
+      <BigTitle text={title} />
       <SmallText text={descr} />
     </li>
   ));
@@ -50,33 +50,20 @@ const HomeIssue = () => {
   const renderWhatWeDoList = whatWeDoData.map(({ src, title }, index) => (
     <li className='whatWeDo__item'>
       <img className='whatWeDo__img' src={src} alt='' />
-      <BigTitle text={title} marginBottom='22px' />
-      <SmallText
-        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet.'
-        marginBottom='31px'
-      />
-      <ButtonRound
-        text='Read more'
-        fontSize='16px'
-        width='152px'
-        height='40px'
-      />
+      <BigTitle text={title} />
+      <SmallText text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet.' />
+      <ButtonRound text='Read more' />
     </li>
   ));
 
   return (
     <section className='HomeIssue'>
       <section className='issueBlock'>
-        <StopClimateChange marginBottom='136px' />
+        <StopClimateChange />
 
         <div className='HomeIssue__card'>
-          <RectangulareTitle text='THE ISSUE' marginBottom='36px' />
-          <BigTitle
-            text='Climate change poses the biggest threat to women in developing nations.'
-            fontSize='22px'
-            textAlign='center'
-            marginBottom='33px'
-          />
+          <RectangularTitle text='THE ISSUE' />
+          <BigTitle text='Climate change poses the biggest threat to women in developing nations.' />
 
           <Link to='/readMore' className='readMore'>
             Read more about this environmental and social cause
@@ -85,7 +72,7 @@ const HomeIssue = () => {
       </section>
 
       <section className='takeAction'>
-        <RectangulareTitle text='TAKE ACTION' marginBottom='47px' />
+        <RectangularTitle text='TAKE ACTION' />
         <ul>{renderTakeActionList}</ul>
       </section>
 

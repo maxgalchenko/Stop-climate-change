@@ -1,0 +1,40 @@
+@import '../../global/global.scss';
+
+.OurImpact {
+  padding: 32px 32px 64px;
+  background-color: $darkBlue;
+  position: relative;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $darkBlue;
+  .RectangularTitle {
+    @extend %RectangularTitle--white;
+    margin-bottom: 33px;
+    transform: translateY(0);
+  }
+  &__title {
+    @extend %font__normal--bold;
+    font-size: 22px;
+    line-height: 1.2em;
+    color: $white;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  dd {
+    @extend %font__normal--bold;
+    font-size: 16px;
+    color: $white;
+    line-height: 1.2em;
+  }
+}

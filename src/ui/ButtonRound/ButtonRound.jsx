@@ -25,7 +25,7 @@ const ButtonRound = ({
         fontSize,
       }}
     >
-      {text}
+      {text || 'Read more'}
     </Link>
   );
 };

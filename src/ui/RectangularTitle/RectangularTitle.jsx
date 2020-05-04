@@ -1,7 +1,7 @@
 import React from 'react';
-import './RectangulareTitle.scss';
+import './RectangularTitle.scss';
 
-const RectangulareTitle = ({
+const RectangularTitle = ({
   text,
   transform,
   color,
@@ -10,7 +10,7 @@ const RectangulareTitle = ({
 }) => {
   return (
     <h4
-      className='RectangulareTitle'
+      className='RectangularTitle'
       style={{ transform, color, backgroundColor, marginBottom }}
     >
       {text}
@@ -18,4 +18,4 @@ const RectangulareTitle = ({
   );
 };
 
-export default RectangulareTitle;
+export default RectangularTitle;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './OurTeam.scss';
-import RectangulareTitle from '../../ui/RectangulareTitle/RectangulareTitle';
+import RectangularTitle from '../../ui/RectangularTitle/RectangularTitle';
 import BigTitle from '../../ui/BigTitle/BigTitle';
 import SmallText from '../../ui/SmallText/SmallText';
 import { img1, img2, img3, img4, img5, img6 } from './images/';
@@ -19,7 +19,7 @@ const OurTeam = () => {
 
   return (
     <section className='OurTeam'>
-      <RectangulareTitle text='OUR TEAM' />
+      <RectangularTitle text='OUR TEAM' />
       <BigTitle text='Meet the team of people making it happen.' />
       <SmallText text='Our leaders set our global direction, goals and strategies, and support nearly 500 team members working in more than 20 countries around the world.' />
 

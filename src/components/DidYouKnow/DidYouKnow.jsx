@@ -2,7 +2,7 @@ import React from 'react';
 import './DidYouKnow.scss';
 import PencilTitle from '../../ui/PencilTitle/PencilTitle';
 import ButtonRound from '../../ui/ButtonRound/ButtonRound';
-import RectangulareTitle from '../../ui/RectangulareTitle/RectangulareTitle';
+import RectangularTitle from '../../ui/RectangularTitle/RectangularTitle';
 import BigTitle from '../../ui/BigTitle/BigTitle';
 import SmallText from '../../ui/SmallText/SmallText';
 
@@ -57,7 +57,7 @@ const DidYouKnow = () => {
       />
 
       <section className='didYouKnow'>
-        <RectangulareTitle text='DID YOU KNOW?' transform='translateY( 50% )' />
+        <RectangularTitle text='DID YOU KNOW?' transform='translateY( 50% )' />
         <ul className='didYouKnow__list '>{renderDidYouKnowList}</ul>
       </section>
     </section>
