@@ -1,0 +1,60 @@
+@import '../../global/global.scss';
+
+.StoriesOfOurWork {
+  padding: 32px 32px 64px;
+  background-color: $darkBlue;
+  .PencilTitle {
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: $white;
+    text-align: center;
+  }
+  &__buttonsList {
+    margin-bottom: 32px;
+    button {
+      text-transform: uppercase;
+      padding: 15px;
+      background-color: transparent;
+      border: none;
+      color: $white;
+      width: 100%;
+      text-align-last: left;
+    }
+    .selectedButton {
+      background-color: $green;
+      color: $darkBlue;
+    }
+  }
+  &__img1,
+  &__img2,
+  &__card {
+    margin-bottom: 32px;
+  }
+  &__card {
+    padding: 32px;
+    background-color: $white;
+    @extend %font__normal--bold;
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+  .BigTitle {
+    @extend %font__normal--bold;
+    font-size: 28px;
+    line-height: 1.2em;
+    color: $white;
+    margin-bottom: 26px;
+  }
+  &__text {
+    margin-bottom: 25px;
+    p {
+      color:$white;
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .ButtonRound {
+    width: 50%;
+    margin-left: 0 !important;
+  }
+}

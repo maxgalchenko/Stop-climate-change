@@ -48,7 +48,7 @@ const HomeIssue = () => {
   ));
 
   const renderWhatWeDoList = whatWeDoData.map(({ src, title }, index) => (
-    <li className='whatWeDo__item'>
+    <li className='whatWeDo__item' key={index}>
       <img className='whatWeDo__img' src={src} alt='' />
       <BigTitle text={title} />
       <SmallText text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet.' />

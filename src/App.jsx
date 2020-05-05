@@ -3,10 +3,9 @@ import './App.scss';
 import Header from './components/Header/Header';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import News from './pages/News';
+import { Home, About, News, Stories } from './pages';
 import Subscribe from './components/Subscribe/Subscribe';
+import Donation from './pages/Donation';
 
 const App = () => {
   return (
@@ -14,11 +13,14 @@ const App = () => {
       <div className='App'>
         <Header />
 
-        {/* <Switch>
+        <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/aboutUs' component={About} />
-        </Switch> */}
-        <News />
+          <Route path='/news' component={News} />
+          <Route path='/ourStories' component={Stories} />
+          <Route path='/donate' component={Donation} />
+        </Switch>
+
         <Subscribe />
         <Footer />
       </div>

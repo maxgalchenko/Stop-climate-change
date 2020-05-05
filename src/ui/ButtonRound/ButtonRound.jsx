@@ -11,9 +11,11 @@ const ButtonRound = ({
   width,
   height,
   fontSize,
+  onClick,
 }) => {
   return (
     <Link
+      onClick={onClick ? () => onClick() : null}
       className='ButtonRound'
       to={to}
       style={{

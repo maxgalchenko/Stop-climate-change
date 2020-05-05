@@ -22,8 +22,8 @@ const LetsTake = () => {
     },
   ];
 
-  const letsTakeArticleRender = letsTakeArticleData.map(({ ...props }) => (
-    <LetsTakeArticle {...props} />
+  const letsTakeArticleRender = letsTakeArticleData.map(({ ...props }, index) => (
+    <LetsTakeArticle {...props} key={index}/>
   ));
 
   return (

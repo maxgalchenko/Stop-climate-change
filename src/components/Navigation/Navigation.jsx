@@ -6,7 +6,7 @@ const Navigation = () => {
   const navData = [
     { text: 'About us', to: '/aboutUs/' },
     { text: 'Our stories', to: '/ourStories/' },
-    { text: 'News and events', to: '/newsAndEvents/' },
+    { text: 'News and events', to: '/news/' },
   ];
 
   const renderNavItems = navData.map(({ text, to }, index) => (
