@@ -1,0 +1,84 @@
+@import '../../global/global.scss';
+
+.DonateCheckout {
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 32px;
+  .PencilTitle {
+    margin-bottom: 26px;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+  }
+  form {
+    background-color: $darkBlue;
+    padding: 32px;
+  }
+  legend {
+    font-size: 22px;
+    line-height: 28px;
+    color: $white;
+    margin-bottom: 22px;
+    @extend %font__normal--bold;
+  }
+  .yourInformation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+    &__first-name-label,
+    &__last-name-label,
+    &__city-label {
+      width: 45%;
+    }
+    &__street-address-label,
+    &__email-label {
+      width: 100%;
+    }
+    &__zip {
+      white-space: nowrap;
+    }
+    &__zip-label,
+    &__state-label {
+      width: 20%;
+    }
+  }
+  .paymentInformation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+    &__month-label,
+    &__year-label,
+    &__security-code-label {
+      width: 30%;
+    }
+    &__month,
+    &__year,
+    &__security-code {
+      &::placeholder {
+        text-transform: uppercase;
+      }
+    }
+    &__credit-card-number-label {
+      width: 100%;
+    }
+  }
+  &__instruction {
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 36px;
+    color: $white;
+    font-weight: bold;
+  }
+  .ButtonRound {
+    margin-bottom: 24px;
+    height: 50px;
+    width: 100%;
+  }
+  &__goBack {
+    color: $green;
+    text-decoration: underline;
+  }
+}

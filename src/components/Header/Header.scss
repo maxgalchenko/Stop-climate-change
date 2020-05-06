@@ -9,4 +9,22 @@
     margin-bottom: 30px;
     justify-content: space-between;
   }
+  .ButtonRound {
+    height: 40px;
+  }
+}
+
+.Header--donate {
+  padding: 20px;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .Header {
+
+  }
+  .Header--donate {
+    
+  }
 }

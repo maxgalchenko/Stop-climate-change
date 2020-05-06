@@ -1,0 +1,62 @@
+@import '../../global/global.scss';
+
+.DonateCardItem {
+  margin-bottom: -1px;
+  &__label {
+    padding: 32px;
+    background-color: $white;
+    border-top: 1px solid $darkBlue;
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+  .selectedLabel {
+    background-color: $darkBlue;
+    border: 1px solid $white;
+  }
+  .selectedLabel .DonateCardItem__firstRow,
+  .selectedLabel .SmallText {
+    color: $white;
+  }
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  &__checkmark {
+    position: absolute;
+    left: 32px;
+    top: 38px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $darkBlue;
+    background-color: $white;
+    border-radius: 50%;
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+      width: 16px;
+      height: 16px;
+      background-color: $darkBlue;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+  .DonateCardItem__input:checked ~ .DonateCardItem__checkmark:after {
+    display: block;
+  }
+  &__firstRow {
+    padding-left: 50px;
+    margin-bottom: 14px;
+    font-size: 44px;
+    line-height: 44px;
+    color: $darkBlue;
+    @extend %font__normal--bold;
+    display: block;
+  }
+}

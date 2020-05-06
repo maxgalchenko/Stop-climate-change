@@ -4,7 +4,7 @@
   padding: 32px 32px 64px;
   background-image: url('./images/bg.jpg');
   background-repeat: no-repeat;
-  background-position: cover;
+  background-size: cover;
   .PencilTitle {
     font-size: 32px;
     line-height: 46px;
@@ -17,71 +17,32 @@
   }
 
   .donateAmount {
-    &__title {
-      font-size: 22px;
-      color: $white;
-      margin-bottom: 28px;
-      text-align: center;
-      @extend %font__normal--bold;
+    margin-bottom: 95px;
+  }
+  .title {
+    font-size: 22px;
+    color: $white;
+    margin-bottom: 28px;
+    text-align: center;
+    @extend %font__normal--bold;
+  }
+  .donatePeriod {
+    margin-bottom: 42px;
+    .DonateCardItem__firstRow {
+      font-size: 18px;
     }
-    &__item {
-      margin-bottom: -1px;
+  }
+
+  .buttonsWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .cancel-btn {
+      color: $green;
+      text-decoration: underline;
     }
-    &__label {
-      padding: 32px;
-      background-color: $white;
-      border-top: 1px solid $darkBlue;
-      position: relative;
-      margin: 0;
-    }
-    &__selectedLabel {
-      background-color: $darkBlue;
-      border: 1px solid $white;
-    }
-    &__selectedLabel .donateAmount__price,
-    &__selectedLabel .SmallText {
-      color: $white;
-    }
-    &__input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
-    }
-    &__checkmark {
-      position: absolute;
-      left: 32px;
-      top: 38px;
-      width: 32px;
-      height: 32px;
-      border: 1px solid $darkBlue;
-      background-color: $white;
-      border-radius: 50%;
-      &::after {
-        content: '';
-        position: absolute;
-        display: none;
-        width: 16px;
-        height: 16px;
-        background-color: $darkBlue;
-        border-radius: 50%;
-        left: 50%;
-        top: 50%;
-        transform: translateY(-50%) translateX(-50%);
-      }
-    }
-    .donateAmount__input:checked ~ .donateAmount__checkmark:after {
-      display: block;
-    }
-    &__price {
-      padding-left: 50px;
-      margin-bottom: 14px;
-      font-size: 44px;
-      line-height: 44px;
-      color: $darkBlue;
-      @extend %font__normal--bold;
-      display: block;
+    .ButtonRound {
+      margin-right: 0 !important;
     }
   }
 }

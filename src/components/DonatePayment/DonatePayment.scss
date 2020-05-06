@@ -1,0 +1,75 @@
+@import '../../global/global.scss';
+
+.DonatePayment {
+  padding: 0 0 56px;
+  background-color: $darkBlue;
+  &__wrap {
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 32px;
+    margin-bottom: 32px;
+  }
+  &__thanks {
+    color: $white;
+    font-size: 22px;
+    width: 60%;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+  .RectangularTitle {
+    transform: translateY(0);
+    margin-left: 32px;
+  }
+  &__card {
+    background-color: $white;
+    padding: 50px 32px 16px;
+    margin-top: -20px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2em;
+    p {
+      margin-bottom: 36px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      li {
+        box-sizing: border-box;
+        width: 48%;
+        margin-bottom: 16px;
+      }
+      a {
+        background-color: $green;
+        border-radius: 100px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        box-sizing: border-box;
+        height: 32px;
+        font-weight: 300;
+        font-size: 11px;
+        text-transform: uppercase;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+  &__thanks2 {
+    color: $white;
+    padding: 0 32px;
+    margin-bottom: 32px;
+    a {
+      color: $green;
+      text-decoration: underline;
+    }
+  }
+  .PencilTitle {
+    padding: 0 32px;
+  }
+}

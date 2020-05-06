@@ -13,3 +13,14 @@
     white-space: nowrap;
   }
 }
+
+@media (min-width: 768px) {
+  .Navigation {
+    ul {
+      display: flex;
+      li {
+        margin-right: 31px;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.scss';
 import { Row, Container } from 'react-bootstrap';
 import SmallText from '../../ui/SmallText/SmallText';
-import Logo from '../Logo/Logo';
+import Logo from '../../ui/Logo/Logo';
 import StopClimateChange from '../StopClimateChange/StopClimateChange';
 
 const Footer = () => {

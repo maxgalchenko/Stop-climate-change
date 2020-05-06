@@ -1,58 +1,78 @@
 import React from 'react';
 import './Donate1.scss';
 import PencilTitle from '../../ui/PencilTitle/PencilTitle';
-import SmallText from '../../ui/SmallText/SmallText';
+import DonateCardItem from '../DonateCardItem/DonateCardItem';
+import { Link } from 'react-router-dom';
+import ButtonRound from '../../ui/ButtonRound/ButtonRound';
 
 const Donate1 = () => {
   const dataDonateAmount = [
     {
-      amount: '10',
-      className: 'donateAmount__selectedLabel',
+      firstRowText: '$10',
+      className: 'selectedLabel',
       isChecked: true,
-      text:
+      secondRowText:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, laudantium.',
     },
     {
-      amount: '25',
-      text:
+      firstRowText: '$25',
+      secondRowText:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, asperiores.',
     },
     {
-      amount: '50',
-      text:
+      firstRowText: '$50',
+      secondRowText:
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, nostrum.',
     },
   ];
 
   const renderDonateAmountList = dataDonateAmount.map(
-    ({ amount, text, className, isChecked }, index) => (
-      <li className={'donateAmount__item'} key={index}>
-        <label
-          className={`donateAmount__label ${className}`}
-          htmlFor={'amountRadioButton' + (index + 1)}
-        >
-          <input
-            type='radio'
-            id={'amountRadioButton' + (index + 1)}
-            name='donateAmount'
-            className='donateAmount__input'
-            defaultChecked={isChecked}
-            onClick={(e) => onLabelClick(e)}
-          />
-          <span className='donateAmount__checkmark' />
-
-          <b className='donateAmount__price'>{'$' + amount}</b>
-          <SmallText text={text} />
-        </label>
-      </li>
+    ({ firstRowText, secondRowText, className, isChecked }, index) => (
+      <DonateCardItem
+        key={index}
+        firstRowText={firstRowText}
+        secondRowText={secondRowText}
+        className={className}
+        isChecked={isChecked}
+        id={index + 1}
+        radioName='donateAmount'
+        onClick={(e) => onLabelClick(e, 'donateAmount')}
+      />
     )
   );
 
-  const onLabelClick = (e) => {
-    const nodeLabels = document.querySelectorAll('.donateAmount label');
+  const dataDonatePeriod = [
+    {
+      className: 'selectedLabel',
+      isChecked: true,
+      firstRowText: 'Monthly',
+    },
+    {
+      firstRowText: 'One time',
+    },
+  ];
+
+  const renderDonatePeriodList = dataDonatePeriod.map(
+    ({ firstRowText, className, isChecked }, index) => (
+      <DonateCardItem
+        key={index}
+        firstRowText={firstRowText}
+        className={className}
+        isChecked={isChecked}
+        id={index + 1}
+        radioName='donatePeriod'
+        onClick={(e) => onLabelClick(e, 'donatePeriod')}
+      />
+    )
+  );
+
+  const onLabelClick = (e, classList) => {
+    const nodeLabels = document.querySelectorAll(
+      `.${classList}__list .DonateCardItem__label`
+    );
     const arrayLabels = [...nodeLabels];
-    arrayLabels.forEach((item) => (item.className = 'donateAmount__label'));
-    e.target.parentNode.className += ' donateAmount__selectedLabel';
+    arrayLabels.forEach((item) => (item.className = 'DonateCardItem__label'));
+    e.target.parentNode.className += ' selectedLabel';
   };
 
   return (
@@ -60,11 +80,21 @@ const Donate1 = () => {
       <PencilTitle text='We can Save the future' />
       <form action=''>
         <fieldset className='donateAmount'>
-          <legend className='donateAmount__title'>
-            Choose a donation amount
-          </legend>
+          <legend className='title'>Choose a donation amount</legend>
           <ul className='donateAmount__list'>{renderDonateAmountList}</ul>
         </fieldset>
+
+        <fieldset className='donatePeriod'>
+          <legend className='title'>Choose a donation frequency</legend>
+          <ul className='donatePeriod__list'>{renderDonatePeriodList}</ul>
+        </fieldset>
+
+        <div className='buttonsWrap'>
+          <Link to='/aboutUs/' className='cancel-btn'>
+            Cancel
+          </Link>
+          <ButtonRound text='Go to checkout' to='/donate/checkout' />
+        </div>
       </form>
     </section>
   );
