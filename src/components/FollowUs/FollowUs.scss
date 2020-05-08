@@ -50,8 +50,38 @@
       text-decoration: underline;
     }
     img {
-      width: 100% ;
+      width: 100%;
       display: block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .FollowUs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 64px;
+    align-items: center;
+    .PencilTitle {
+      order: 1;
+      font-size: 44px;
+      line-height: 46px;
+      margin-bottom: 64px;
+    }
+    &__wrap {
+      order: 2;
+      margin-bottom: 64px;
+    }
+    &__post {
+      order: 3;
+      display: flex;
+      justify-content: space-between;
+      .greenCard,
+      img {
+        width: 48%;
+        margin-bottom: 0;
+      }
     }
   }
 }

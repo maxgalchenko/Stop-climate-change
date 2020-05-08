@@ -9,16 +9,18 @@
   }
   .RectangularTitle {
     @extend %RectangularTitle--white;
-    transform: translateY(0);
+    transform: translateY(20px);
+  }
+  .SmallText {
+    margin-bottom: 32px;
   }
   .descr__wrap {
-    background-color: $white;
-    margin-top: -20px;
-    padding-bottom: 32px;
+    background-color: $darkBlue;
   }
   figcaption {
     padding: 36px 28px 32px;
     text-align: center;
+    background-color: $white;
   }
   .BigTitle {
     margin-bottom: 22px;
@@ -28,13 +30,13 @@
     display: block;
     min-height: 224px;
   }
-  .carousel {
+  .Slider {
     margin-top: -20px;
   }
-  .carousel-control-prev {
-    display: none;
+  .slick-prev {
+    display: none !important;
   }
-  .carousel-control-next {
+  .slick-next {
     background-color: $green;
     background-position: cover;
     background-repeat: no-repeat;
@@ -42,17 +44,28 @@
     height: 48px;
     border-radius: 50%;
     opacity: 1;
-    top: 90px;
+    top: 122px;
     right: -20px;
+    &:hover {
+      background: $green;
+    }
   }
-  .carousel-control-next-icon {
+  .slick-next:before {
     background-image: url('./images/arrowRight.svg');
-    background-position: -8px;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-position: 0;
     width: 30px;
     height: 30px;
+    display: block;
+    content: '';
+    left: 50%;
+    top: 50%;
+    transform: translateX(25%);
+    opacity: 1;
   }
-  .carousel-indicators {
-    margin-bottom: -34px;
+  .slick-dots {
+    margin-bottom: -16px;
     li {
       width: 13px;
       height: 13px;
@@ -60,9 +73,39 @@
       background-color: $white;
       border-radius: 50%;
       opacity: 1;
+      button {
+        &:before {
+          display: none;
+        }
+      }
     }
-    .active {
+    .slick-active {
       background-color: $darkBlue;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .SliderAboutPage {
+    padding: 64px 0 64px 64px;
+    .PencilTitle {
+      padding-right: 192px;
+      text-align: left;
+      margin-bottom: 70px;
+    }
+    .slick-next {
+      top: -100px;
+      right: 64px;
+      width: 64px;
+      height: 64px;
+      &:before {
+        width: 33px;
+        transform: translateX(16px);
+        opacity: 1;
+      }
+    }
+    .slick-slide {
+      padding-right: 32px !important;
     }
   }
 }

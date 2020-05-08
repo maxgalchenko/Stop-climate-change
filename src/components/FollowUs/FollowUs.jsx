@@ -26,8 +26,10 @@ const FollowUs = () => {
 
   return (
     <section className='FollowUs'>
-      <h2 className='FollowUs__title'>Follow us</h2>
-      <ul className='FollowUs__socials'>{renderSocialsList}</ul>
+      <div className='FollowUs__wrap'>
+        <h2 className='FollowUs__title'>Follow us</h2>
+        <ul className='FollowUs__socials'>{renderSocialsList}</ul>
+      </div>
 
       <PencilTitle text='LATEST POST' />
 

@@ -16,7 +16,7 @@
     background-color: $white;
     padding: 0 16px;
     color: $darkBlue;
-    &::placeholder { 
+    &::placeholder {
       @extend %font__normal--light;
       color: $darkBlue;
     }
@@ -28,5 +28,24 @@
     justify-content: center;
     background-color: $darkBlue;
     color: $green;
+  }
+  .BigTitle {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Subscribe {
+    padding: 64px;
+    .BigTitle {
+      width: 70%;
+    }
+    input {
+      width: 70%;
+    }
+    button {
+      width: 25%;
+    }
   }
 }

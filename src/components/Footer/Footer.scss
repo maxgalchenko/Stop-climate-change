@@ -6,7 +6,7 @@
   .row1 {
     margin-bottom: 78px;
   }
-  .row2 { 
+  .row2 {
     margin-bottom: 58px;
   }
   .contactUs {
@@ -27,5 +27,33 @@
   }
   .StopClimateChange {
     text-align: right;
+    .PencilTitle {
+      color: $darkBlue;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Footer {
+    padding: 64px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .StopClimateChange {
+      margin-left: auto;
+      transform: translateY(-75%);
+    }
+    .row1 {
+      margin-bottom: 80px;
+    }
+    .row2 {
+      margin-bottom: 0;
+    }
+    .row,
+    .row {
+      width: 66%;
+      display: flex;
+    }
   }
 }

@@ -38,3 +38,35 @@
     line-height: 1.2em;
   }
 }
+@media (min-width: 768px) {
+  .OurImpact {
+    padding: 64px 64px 32px;
+    background-image: url('./images/bg--Tablet.jpg');
+    .RectangularTitle {
+      margin-bottom: 34px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 46px;
+      margin-bottom: 67px;
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 45%;
+      margin-bottom: 57px;
+      .PencilTitle {
+        font-size: 72px;
+        line-height: 76px;
+        margin-bottom: 16px;
+      }
+      dd {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+}

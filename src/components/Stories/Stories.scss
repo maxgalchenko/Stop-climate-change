@@ -41,3 +41,48 @@
     background-color: $darkBlue;
   }
 }
+
+@media (min-width: 768px) {
+  .Stories {
+    padding: 47px 64px 76px;
+    .story {
+      margin: 0 auto;
+      img {
+        max-width: 576px;
+        margin-bottom: 0;
+        z-index: 1;
+        position: relative;
+      }
+      &__descr {
+        margin-top: -64px;
+        z-index: 2;
+        position: relative;
+        max-width: 576px;
+        padding: 64px 32px 64px 64px;
+        transform: translateX(64px);
+        text-align: left;
+      }
+      &__preview {
+        margin-bottom: 43px;
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+    .ButtonRound {
+      margin: 0 !important;
+    }
+    .carousel-indicators {
+      left: 0;
+      margin: 0;
+      display: inline-block;
+      bottom: 123px;
+      li {
+        margin-top: 20px;
+      }
+    }
+    .carousel-inner {
+      max-width: calc(576px + 64px);
+      margin: 0 auto;
+    }
+  }
+}

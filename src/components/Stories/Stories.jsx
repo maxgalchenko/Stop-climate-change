@@ -4,12 +4,16 @@ import { Carousel } from 'react-bootstrap';
 import RectangularTitle from '../../ui/RectangularTitle/RectangularTitle';
 import SmallText from '../../ui/SmallText/SmallText';
 import ButtonRound from '../../ui/ButtonRound/ButtonRound';
-import img1 from './images/img1.jpg';
+import { img1, img1Tablet } from './images';
 
 const Stories = () => {
   const carouselItem = (
     <Carousel.Item className='story'>
-      <img src={img1} alt='BALKI, FARMER AND MOTHER IN NIGER' />
+      <picture>
+        <source media='(min-width: 768px)' srcset={img1Tablet} />
+        <img src={img1} alt='BALKI, FARMER AND MOTHER IN NIGER' />
+      </picture>
+
       <div className='story__descr'>
         <p className='story__preview'>
           “I am a person who was helped by this organization. Before they gave
@@ -32,7 +36,11 @@ const Stories = () => {
     <section className='Stories'>
       <RectangularTitle text='STORIES' transform='translateY(0)' />
 
-      <Carousel className='Stories__carousel' controls={false}>
+      <Carousel
+        className='Stories__carousel'
+        controls={false}
+        interval={null}
+      >
         {carouselItem}
         {carouselItem}
         {carouselItem}

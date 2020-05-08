@@ -31,5 +31,44 @@
       position: relative;
       z-index: 0;
     }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .OurTeam {
+    padding: 64px 64px 30px;
+    .RectangularTitle {
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+    .textWrap {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 64px;
+    }
+    .BigTitle,
+    .SmallText {
+      width: 45%;
+      text-align: left;
+    }
+    .BigTitle {
+      font-size: 36px;
+      line-height: 46px;
+      margin: 0;
+    }
+    .SmallText {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+    }
+    &__item {
+      margin-bottom: 15px;
+      figcaption {
+        transform: translateX(32px) translateY(-32px);
+      }
+    }
   }
 }

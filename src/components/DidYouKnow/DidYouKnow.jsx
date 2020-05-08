@@ -28,36 +28,37 @@ const DidYouKnow = () => {
 
   const renderDidYouKnowList = didYouKnowData.map(({ title, text }, index) => (
     <li className='didYouKnow__item' key={index}>
-      <div className='row'>
-        <BigTitle text={title} fontSize='22px' />
-        <div className='didYouKnow__socialIcon socialIcon--twitter'></div>
+      <div className='didYouKnow__row'>
+        <BigTitle text={title} />
+        <a
+          href='twitter.com'
+          target='_blank'
+          className='didYouKnow__socialIcon socialIcon--twitter'
+        >
+          twitter link
+        </a>
       </div>
 
-      <div className='row'>
+      <div className='didYouKnow__row'>
         <SmallText text={text} />
-        <div className='didYouKnow__socialIcon socialIcon--facebook'></div>
+        <a
+          href='facebook.com'
+          target='_blank'
+          className='didYouKnow__socialIcon socialIcon--facebook'
+        >
+          facebook link
+        </a>
       </div>
     </li>
   ));
 
   return (
     <section className='DidYouKnow'>
-      <PencilTitle
-        text='Climate change Is a hunger issue.'
-        marginBottom='18px'
-      />
-      <ButtonRound
-        text='Take action today'
-        fontSize='16px'
-        width='152px'
-        height='40px'
-        marginLeft='0'
-        marginRight='auto'
-        marginBottom='38px'
-      />
+      <PencilTitle text='Climate change Is a hunger issue.' />
+      <ButtonRound text='Take action today' />
 
       <section className='didYouKnow'>
-        <RectangularTitle text='DID YOU KNOW?' transform='translateY( 50% )' />
+        <RectangularTitle text='DID YOU KNOW?' />
         <ul className='didYouKnow__list '>{renderDidYouKnowList}</ul>
       </section>
     </section>

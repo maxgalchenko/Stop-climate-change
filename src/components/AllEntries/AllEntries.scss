@@ -8,7 +8,6 @@
     font-size: 32px;
     margin-bottom: 24px;
   }
-
   &__filters {
     padding: 8px;
     display: flex;
@@ -21,7 +20,6 @@
     li {
       width: 88px;
       height: 24px;
-      
     }
     button {
       background: transparent;
@@ -83,6 +81,39 @@
       text-decoration: underline;
       color: $white;
       padding: 0 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .AllEntries {
+    padding: 64px 64px 32px;
+
+    .PencilTitle {
+      font-size: 44px;
+      line-height: 46px;
+      margin-bottom: 52px;
+    }
+    .titleFilters__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__filters {
+      width: 50%;
+      height: 40px;
+      margin-bottom: 52px;
+    }
+    &__entriesList {
+      li {
+        width: 22%;
+      }
+      .events {
+        width: 49%;
+        a {
+          display: block;
+        }
+      }
     }
   }
 }

@@ -4,4 +4,70 @@
   background-color: $darkBlue;
   padding: 64px 32px 54px;
   text-align: center;
+  .PencilTitle {
+    margin-bottom: 50px;
+  }
+  .RectangularTitle {
+    transform: translateY(0);
+    color: $darkBlue;
+    background-color: $white;
+  }
+  .BigTitle {
+    margin-bottom: 40px;
+    color: $white;
+    font-size: 22px;
+  }
+  .SmallText {
+    margin-bottom: 31px;
+    color: $white;
+  }
+}
+
+@media (min-width: 768px) {
+  .LetsTake {
+    padding: 64px;
+
+    .PencilTitle {
+      text-align: left;
+      margin-bottom: 59px;
+    }
+    .LetsTakeArticle {
+      &:nth-child(odd) {
+        .RectangularTitle {
+          margin-left: 0;
+        }
+        .article__wrap {
+          .content-wrap {
+            order: 1;
+          }
+          img {
+            order: 2;
+          }
+        }
+      }
+
+      .RectangularTitle {
+        margin-right: 0;
+        transform: translateY(0);
+        margin-right: calc(45% - 160px);
+      }
+      .article__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -40px;
+        .content-wrap {
+          padding-top: 80px;
+          width: 45%;
+          text-align: left;
+          .ButtonRound {
+            margin-left: 0 !important;
+          }
+        }
+        img {
+          width: 45%;
+          margin-bottom: auto;
+        }
+      }
+    }
+  }
 }

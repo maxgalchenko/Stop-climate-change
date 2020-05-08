@@ -6,6 +6,8 @@ import Footer from './components/Footer/Footer';
 import { Home, About, News, Stories } from './pages';
 import Subscribe from './components/Subscribe/Subscribe';
 import Donation from './pages/Donation';
+import 'slick-carousel/slick/slick.scss';
+import 'slick-carousel/slick/slick-theme.scss';
 
 const App = () => {
   return (

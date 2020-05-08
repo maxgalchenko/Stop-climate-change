@@ -121,9 +121,10 @@ const AllEntries = () => {
 
   return (
     <section className='AllEntries'>
-      <PencilTitle text='ALL ENTRIES' />
-
-      <ul className='AllEntries__filters'>{renderFilters}</ul>
+      <div className='titleFilters__wrap'>
+        <PencilTitle text='ALL ENTRIES' />
+        <ul className='AllEntries__filters'>{renderFilters}</ul>
+      </div>
 
       <ul className='AllEntries__entriesList'>{renderPosts}</ul>
     </section>

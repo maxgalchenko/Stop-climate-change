@@ -82,3 +82,41 @@
     text-decoration: underline;
   }
 }
+
+@media (min-width: 768px) {
+  .DonateCheckout {
+    padding: 64px;
+    .PencilTitle {
+      font-size: 44px;
+      line-height: 46px;
+      margin-bottom: 46px;
+      padding: 0 20%;
+    }
+    form {
+      padding: 64px;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .yourInformation {
+      legend {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 30px;
+      }
+    }
+    &__instruction {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 70px;
+    }
+    .ButtonRound {
+      width: 50%;
+      margin: 0 !important;
+    }
+    &__goBack {
+      font-size: 16px;
+    }
+  }
+}

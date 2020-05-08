@@ -23,7 +23,7 @@
     @extend %font__normal--light;
   }
   .issueBlock {
-    background-image: url(./images/bg.jpg);
+    background-image: url(./images/bg--mobile.jpg);
     min-height: 592px;
     padding: 32px 32px 32px;
     background-repeat: no-repeat;
@@ -101,6 +101,90 @@
       display: block;
       margin: 0 auto 3px;
       transform: translateY(-32px);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .HomeIssue {
+    .issueBlock {
+      background-image: url(./images/bg--tablet.jpg);
+      padding: 64px;
+      .StopClimateChange {
+        margin-bottom: 94px;
+      }
+    }
+    &__card {
+      padding: 0 64px 64px;
+      text-align-last: left;
+      .RectangularTitle {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+      .BigTitle {
+        text-align: left;
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+    .readMore {
+      font-size: 16px;
+    }
+
+    .takeAction {
+      padding: 0 64px 24px;
+      li {
+        margin-bottom: 44px;
+        width: 40%;
+      }
+    }
+
+    .whatWeDo {
+      padding: 64px;
+      &__title {
+        margin-left: 0;
+        margin-bottom: 32px;
+      }
+      &__mission {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 64px;
+        text-align: left;
+      }
+      &__list {
+        li {
+          padding: 0 32px 32px;
+          display: grid;
+          grid-template-columns: 45% 45%;
+          justify-content: space-between;
+        }
+      }
+      &__img {
+        margin: 0;
+        width: 100%;
+        grid-area: img;
+      }
+      .ButtonRound {
+        margin: 0 !important;
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .BigTitle {
+        padding-top: 36px;
+        margin: 0;
+        grid-row: 1;
+        grid-column: 2;
+        line-height: 28px;
+        text-align: left;
+      }
+      .SmallText {
+        padding-top: 118px;
+        margin: 0;
+        grid-row: 1;
+        grid-column: 2;
+        line-height: 24px;
+        text-align: left;
+      }
     }
   }
 }

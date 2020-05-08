@@ -10,20 +10,18 @@ const LetsTakeArticle = ({ rectangularText, src, bigTitleText, smallText }) => {
     <article className='LetsTakeArticle'>
       <RectangularTitle
         text={rectangularText}
-        transform='translateY(0)'
-        color='#354463'
-        backgroundColor='white'
+
       />
       <div className='article__wrap'>
         <img src={src} alt='' />
-        <BigTitle
-          text={bigTitleText}
-          marginBottom='40px'
-          color='white'
-          fontSize='22px'
-        />
-        <SmallText text={smallText} marginBottom='31px' color='white' />
-        <ButtonRound text='Read more' />
+        <div className='content-wrap'>
+          <BigTitle
+            text={bigTitleText}
+         
+          />
+          <SmallText text={smallText} />
+          <ButtonRound text='Read more' />
+        </div>
       </div>
     </article>
   );

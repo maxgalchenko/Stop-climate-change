@@ -18,3 +18,24 @@
     text-align: center;
   }
 }
+
+@media (min-width: 768px) {
+  .AboutIssue {
+    padding: 64px;
+    background-image: url('./images/bg--tablet.jpg');
+    .StopClimateChange {
+      margin-bottom: 80px;
+    }
+    .RectangularTitle {
+      margin-left: 0;
+    }
+    &__card {
+      padding: 0 64px 64px;
+    }
+    .BigTitle {
+      font-size: 28px;
+      line-height: 36px;
+      text-align: left;
+    }
+  }
+}

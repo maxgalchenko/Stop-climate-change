@@ -72,7 +72,7 @@ const DonateCheckout = () => {
         </fieldset>
 
         <fieldset className='paymentInformation'>
-          <legend>Your information</legend>
+          <legend>Payment information</legend>
           {renderPaymentInformation}
         </fieldset>
 

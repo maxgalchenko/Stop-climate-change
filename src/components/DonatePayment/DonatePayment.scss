@@ -73,3 +73,47 @@
     padding: 0 32px;
   }
 }
+
+@media (min-width: 768px) {
+  .DonatePayment {
+    &__wrap {
+      padding: 64px;
+      margin-bottom: 64px;
+    }
+    &__thanks {
+      font-size: 36px;
+      line-height: 46px;
+      margin-bottom: 50px;
+      width: 70%;
+    }
+    &__card {
+      padding: 64px;
+      p {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 30px;
+      }
+      ul {
+        li {
+          width: 23%;
+          height: 32px;
+        }
+      }
+    }
+    &__thanks2 {
+      font-size: 16px;
+      line-height: 24px;
+      width: 48%;
+      display: inline-block;
+      margin-bottom: 0;
+      padding-left: 64px;
+    }
+    .PencilTitle {
+      width: 48%;
+      display: inline-block;
+      font-size: 32px;
+      line-height: 46px;
+      padding-right: 64px;
+    }
+  }
+}

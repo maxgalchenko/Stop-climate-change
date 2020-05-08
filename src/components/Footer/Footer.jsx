@@ -72,7 +72,7 @@ const Footer = () => {
           </ul>
         </Row>
 
-        <StopClimateChange color='#354463' />
+        <StopClimateChange />
       </Container>
     </footer>
   );
