@@ -93,7 +93,10 @@ const Donate1 = () => {
           <Link to='/Stop-climate-change/aboutUs/' className='cancel-btn'>
             Cancel
           </Link>
-          <ButtonRound text='Go to checkout' to='/donate/checkout' />
+          <ButtonRound
+            text='Go to checkout'
+            to='/Stop-climate-change/donate/checkout'
+          />
         </div>
       </form>
     </section>
