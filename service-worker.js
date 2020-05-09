@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Stop-climate-change/precache-manifest.39d06c7d0349def72479ba42c8ec5fb9.js"
+  "/Stop-climate-change/precache-manifest.40044b6b599a2511866aceedcc56fa68.js"
 );
 
 self.addEventListener('message', (event) => {

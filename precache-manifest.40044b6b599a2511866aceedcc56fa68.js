@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e28d73c0cc64b1191900b84b05e09f5f",
+    "revision": "2280c1ea0f6dc4f95864e4315437453f",
     "url": "/Stop-climate-change/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Stop-climate-change/static/css/2.55dfd4ec.chunk.css"
   },
   {
-    "revision": "c2be7c5f0e9f1540cc7c",
+    "revision": "07c83eaa3a8709e6886e",
     "url": "/Stop-climate-change/static/css/main.632126f8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Stop-climate-change/static/js/2.3c72753c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c2be7c5f0e9f1540cc7c",
-    "url": "/Stop-climate-change/static/js/main.1d086aa5.chunk.js"
+    "revision": "07c83eaa3a8709e6886e",
+    "url": "/Stop-climate-change/static/js/main.a7667207.chunk.js"
   },
   {
     "revision": "50d412b14d78c50b17bd",
