@@ -127,14 +127,14 @@ const StoriesOfOurWork = () => {
     title,
   }) => (
     <>
-      <picture>
+      <picture className='picture1'>
         <source media='(min-width: 768px)' srcset={img1tablet} />
         <img src={img1} className='StoriesOfOurWork__img1' alt='' />
       </picture>
 
       <div className='carImg__wrap'>
         <p className='StoriesOfOurWork__card'>{cardText}</p>
-        <picture>
+        <picture className='picture2'>
           <source media='(min-width: 768px)' srcset={img2tablet} />
           <img src={img2} className='StoriesOfOurWork__img2' alt='' />
         </picture>

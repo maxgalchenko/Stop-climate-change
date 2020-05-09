@@ -88,15 +88,28 @@
     padding: 78px 160px 128px;
     max-width: 100%;
     display: flex;
-    .PencilTitle {
+
+    .picture1 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    &__img2,
+    &__img1 {
       margin-bottom: 0;
     }
+    .PencilTitle {
+      margin-bottom: 0;
+      width: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    }
     article {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 48% 48%;
+      grid-template-rows: 100%;
+      column-gap: 2%;
       picture {
-        width: 48%;
+        width: 100%;
       }
     }
     &__buttonsList {
@@ -110,27 +123,28 @@
       }
     }
     .carImg__wrap {
-      width: 48%;
+      width: 100%;
     }
     &__text {
-      width: 48%;
+      width: 100%;
       margin-bottom: 0;
       font-size: 20px;
       line-height: 32px;
+      grid-row: 1;
+      grid-column: 1;
+      justify-self: end;
+      // align-self: end;
+      padding-top: 68%;
     }
     .BigTitle {
       margin-bottom: 0;
       font-size: 44px;
       line-height: 56px;
-      width: 48%;
-      position: absolute;
-      bottom: 110px;
+      width: 100%;
     }
     .ButtonRound {
       height: 48px;
       width: 200px;
-      position: absolute;
-      bottom: 40px;
     }
     &__card {
       padding: 64px;
