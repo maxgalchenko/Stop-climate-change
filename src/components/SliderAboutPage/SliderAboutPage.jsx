@@ -30,9 +30,12 @@ const SliderAboutPage = () => {
       <Slider
         infinite={true}
         className='Slider'
-        cssEase='linear'
         slidesToScroll={1}
         slidesToShow={1}
+        autoplay={true}
+        autoplaySpeed={3000}
+        speed={1000}
+        cssEase='ease-out'
         responsive={[
           {
             breakpoint: 768,
@@ -42,7 +45,7 @@ const SliderAboutPage = () => {
             },
           },
           {
-            breakpoint: 1440,
+            breakpoint: 5000,
             settings: {
               slidesToShow: 2,
               centerMode: true,

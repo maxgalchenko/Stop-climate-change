@@ -40,7 +40,7 @@
           .content-wrap {
             order: 1;
           }
-          img {
+          picture {
             order: 2;
           }
         }
@@ -63,11 +63,39 @@
             margin-left: 0 !important;
           }
         }
-        img {
+        picture {
           width: 45%;
           margin-bottom: auto;
         }
+        img {
+          width: 100%;
+        }
       }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .LetsTake {
+    padding: 128px 160px;
+    .PencilTitle {
+      margin-bottom: 74px;
+    }
+    .BigTitle {
+      margin-bottom: 31px;
+      font-size: 44px;
+    }
+    .SmallText {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 48px;
+    }
+    .ButtonRound {
+      height: 48px;
+    }
+    .PencilTitle {
+      font-size: 76px;
+      line-height: 76px;
     }
   }
 }

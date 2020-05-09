@@ -2,7 +2,6 @@ import React from 'react';
 import './HomeIssue.scss';
 import RectangularTitle from '../../ui/RectangularTitle/RectangularTitle';
 import BigTitle from '../../ui/BigTitle/BigTitle';
-import { Link } from 'react-router-dom';
 import SmallText from '../../ui/SmallText/SmallText';
 import {
   postImg1,
@@ -67,13 +66,14 @@ const HomeIssue = () => {
     ({ src, title, srcTablet }, index) => (
       <li className='whatWeDo__item' key={index}>
         <picture>
+          <source media='(min-width: 1440px)' srcset={srcTablet} />
           <source media='(min-width: 768px)' srcset={srcTablet} />
           <img className='whatWeDo__img' src={src} alt='' />
         </picture>
 
         <BigTitle text={title} />
         <SmallText text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet.' />
-        <ButtonRound text='Read more' />
+        <ButtonRound text='Read more' to='/' />
       </li>
     )
   );
@@ -87,9 +87,9 @@ const HomeIssue = () => {
           <RectangularTitle text='THE ISSUE' />
           <BigTitle text='Climate change poses the biggest threat to women in developing nations.' />
 
-          <Link to='/readMore' className='readMore'>
+          <a href='#' className='readMore'>
             Read more about this environmental and social cause
-          </Link>
+          </a>
         </div>
       </section>
 

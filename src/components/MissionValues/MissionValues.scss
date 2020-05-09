@@ -99,3 +99,31 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .MissionValues {
+    padding: 128px 160px 68px 160px;
+    .RectangularTitle {
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+    .BigTitle {
+      font-size: 44px;
+      line-height: 56px;
+      margin-bottom: 128px;
+      text-align: left;
+    }
+    &__item {
+      margin-bottom: 60px;
+      b {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 11px;
+      }
+      .SmallText {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

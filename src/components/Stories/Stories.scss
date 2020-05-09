@@ -3,9 +3,13 @@
 .Stories {
   background-color: $white;
   padding: 36px 32px 72px;
-  .carousel {
+  .slick-slider {
     margin-top: -20px;
     z-index: 1;
+  }
+  .SmallText {
+    font-size: 11px;
+    color: $white;
   }
   .story {
     img {
@@ -27,18 +31,23 @@
       margin-bottom: 16px;
     }
   }
-  .carousel-indicators {
+  .slick-dots {
     bottom: -13px;
-  }
-  .carousel-indicators li {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    border: 1px solid $darkBlue;
-    background-color: $white;
-  }
-  .carousel-indicators .active {
-    background-color: $darkBlue;
+    li {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      border: 1px solid $darkBlue;
+      background-color: $white;
+      button {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .slick-active {
+      background-color: $darkBlue;
+    }
   }
 }
 
@@ -71,18 +80,78 @@
     .ButtonRound {
       margin: 0 !important;
     }
-    .carousel-indicators {
+    .slick-dots {
       left: 0;
       margin: 0;
       display: inline-block;
       bottom: 123px;
+      position: absolute;
+      width: auto;
+      display: flex !important;
+      flex-direction: column;
       li {
         margin-top: 20px;
       }
     }
-    .carousel-inner {
+    .slick-slider {
       max-width: calc(576px + 64px);
       margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .Stories {
+    padding: 128px 160px;
+    .carousel-inner {
+      max-width: 100%;
+      margin: 0;
+    }
+    .slick-slider {
+      max-width: 100%;
+      margin: 0;
+    }
+    .story {
+      display: flex !important;
+      justify-content: space-between;
+      margin-top: 0;
+      position: relative;
+      &__descr {
+        max-width: 100%;
+        order: 1;
+        width: 50%;
+        transform: translateX(0);
+        margin-bottom: 0;
+        height: 60%;
+        margin-bottom: auto;
+        margin-top: auto;
+      }
+      img {
+        max-width: 100%;
+        order: 2;
+      }
+      picture {
+        width: 50%;
+        transform: scale(1.1) translateX(10%);
+      }
+      .ButtonRound {
+        order: 3;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 48px;
+      }
+    }
+    .slick-dots {
+      right: 0;
+      top: 40px;
+      left: auto;
+      display: flex;
+      flex-direction: row;
+    }
+    .RectangularTitle {
+      margin-left: 64px;
+      transform: translateY(20px) !important;
     }
   }
 }

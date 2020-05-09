@@ -4,20 +4,21 @@ import { Row, Container } from 'react-bootstrap';
 import SmallText from '../../ui/SmallText/SmallText';
 import Logo from '../../ui/Logo/Logo';
 import StopClimateChange from '../StopClimateChange/StopClimateChange';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const followUsData = [
-    { title: 'Facebook', href: 'Facebook.com' },
-    { title: 'Twitter.com', href: 'Twitter' },
-    { title: 'Instagram', href: 'Instagram.com' },
-    { title: 'Medium', href: 'Medium.com' },
+    { title: 'Facebook', href: 'https://facebook.com/' },
+    { title: 'Twitter.com', href: 'https://twitter.com/' },
+    { title: 'Instagram', href: 'https://instagram.com/' },
+    { title: 'Medium', href: 'https://medium.com/' },
   ];
 
   const learnMoreData = [
-    { title: 'The issue', href: 'Facebook.com' },
-    { title: 'How we help', href: 'Twitter' },
-    { title: 'Get involved', href: 'Instagram.com' },
-    { title: 'Latest news', href: 'Medium.com' },
+    { title: 'The issue', href: '/' },
+    { title: 'How we help', href: '/aboutUs' },
+    { title: 'Get involved', href: '/donate' },
+    { title: 'Latest news', href: '/news' },
   ];
 
   const renderFolowUsList = followUsData.map(({ title, href }, index) => (
@@ -30,9 +31,9 @@ const Footer = () => {
 
   const renderLearnMoreList = learnMoreData.map(({ title, href }, index) => (
     <li key={index}>
-      <a href={href} target='_blank' rel='noopener noreferrer'>
+      <Link to={href}>
         {title}
-      </a>
+      </Link>
     </li>
   ));
 

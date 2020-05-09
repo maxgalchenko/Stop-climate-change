@@ -77,10 +77,56 @@
       order: 3;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       .greenCard,
+      picture {
+        width: 45%;
+      }
       img {
-        width: 48%;
         margin-bottom: 0;
+      }
+    }
+    .greenCard {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .FollowUs {
+    padding: 60px 160px;
+    .PencilTitle {
+      font-size: 44px;
+      line-height: 48px;
+      margin-bottom: 58px;
+    }
+    &__wrap {
+      display: flex;
+      align-items: center;
+    }
+    &__title,
+    &__socials {
+      margin: 0;
+    }
+    &__title {
+      margin-right: 10px;
+    }
+    &__post {
+      picture {
+        width: 50%;
+      }
+    }
+    .greenCard {
+      padding: 64px;
+      .BigTitle {
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 44px;
+      }
+      .SmallText {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 42px;
       }
     }
   }

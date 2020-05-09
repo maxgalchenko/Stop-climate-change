@@ -8,11 +8,13 @@ import Subscribe from './components/Subscribe/Subscribe';
 import Donation from './pages/Donation';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className='App'>
+        <ScrollToTop />
         <Header />
 
         <Switch>

@@ -5,20 +5,23 @@ import BigTitle from '../../../ui/BigTitle/BigTitle';
 import SmallText from '../../../ui/SmallText/SmallText';
 import ButtonRound from '../../../ui/ButtonRound/ButtonRound';
 
-const LetsTakeArticle = ({ rectangularText, src, bigTitleText, smallText }) => {
+const LetsTakeArticle = ({
+  rectangularText,
+  src,
+  srcDesktop,
+  bigTitleText,
+  smallText,
+}) => {
   return (
     <article className='LetsTakeArticle'>
-      <RectangularTitle
-        text={rectangularText}
-
-      />
+      <RectangularTitle text={rectangularText} />
       <div className='article__wrap'>
-        <img src={src} alt='' />
+        <picture>
+          <source media='(min-width: 1440px)' srcset={srcDesktop} />
+          <img src={src} alt='' />
+        </picture>
         <div className='content-wrap'>
-          <BigTitle
-            text={bigTitleText}
-         
-          />
+          <BigTitle text={bigTitleText} />
           <SmallText text={smallText} />
           <ButtonRound text='Read more' />
         </div>

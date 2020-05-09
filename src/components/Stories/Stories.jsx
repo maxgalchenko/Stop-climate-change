@@ -1,15 +1,16 @@
 import React from 'react';
 import './Stories.scss';
-import { Carousel } from 'react-bootstrap';
+import Slider from 'react-slick';
 import RectangularTitle from '../../ui/RectangularTitle/RectangularTitle';
 import SmallText from '../../ui/SmallText/SmallText';
 import ButtonRound from '../../ui/ButtonRound/ButtonRound';
-import { img1, img1Tablet } from './images';
+import { img1, img1Tablet, img1Desktop } from './images';
 
 const Stories = () => {
   const carouselItem = (
-    <Carousel.Item className='story'>
+    <div className='story'>
       <picture>
+        <source media='(min-width: 1440px)' srcset={img1Desktop} />
         <source media='(min-width: 768px)' srcset={img1Tablet} />
         <img src={img1} alt='BALKI, FARMER AND MOTHER IN NIGER' />
       </picture>
@@ -21,31 +22,33 @@ const Stories = () => {
           life is better.”
         </p>
 
-        <SmallText
-          text='BALKI, FARMER AND MOTHER IN NIGER'
-          fontSize='11px'
-          color='white'
-        />
+        <SmallText text='BALKI, FARMER AND MOTHER IN NIGER' />
       </div>
 
-      <ButtonRound text='Read more' fontSize='18px' marginBottom='28px' />
-    </Carousel.Item>
+      <ButtonRound fontSize='18px' marginBottom='28px' />
+    </div>
   );
 
   return (
     <section className='Stories'>
       <RectangularTitle text='STORIES' transform='translateY(0)' />
 
-      <Carousel
+      <Slider
         className='Stories__carousel'
-        controls={false}
-        interval={null}
+        dots={true}
+        infinite={true}
+        slidesToShow={1}
+        arrows={false}
+        autoplay={true}
+        autoplaySpeed={3000}
+        speed={1000}
+        cssEase='ease-out'
       >
         {carouselItem}
         {carouselItem}
         {carouselItem}
         {carouselItem}
-      </Carousel>
+      </Slider>
     </section>
   );
 };

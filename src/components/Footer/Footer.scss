@@ -57,3 +57,35 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .Footer {
+    padding: 120px 160px;
+    .container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      .row {
+        width: 40%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        ul {
+          width: auto;
+        }
+      }
+
+      .row2 {
+        justify-content: space-around !important;
+        display: flex;
+        margin-right: 5%;
+      }
+    }
+    .StopClimateChange {
+      transform: translate(0);
+      width: 20%;
+      margin: 0;
+      font-size: 44px;
+    }
+  }
+}

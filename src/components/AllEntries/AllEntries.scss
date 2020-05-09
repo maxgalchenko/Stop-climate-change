@@ -40,7 +40,6 @@
 
   &__entriesList {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     li {
@@ -97,7 +96,6 @@
     .titleFilters__wrap {
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
     &__filters {
       width: 50%;
@@ -106,12 +104,42 @@
     }
     &__entriesList {
       li {
-        width: 22%;
+        width: 23.5%;
       }
       .events {
         width: 49%;
         a {
           display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .AllEntries {
+    padding: 68px 160px 120px;
+    &__filters {
+      height: 40px;
+      width: auto;
+    }
+    &__entriesList {
+      li {
+        padding-bottom: 32px;
+        .RectangularTitle {
+          font-size: 14px;
+          height: 40px;
+          width: 60%;
+          margin-left: 18px;
+        }
+        figcaption {
+          padding: 0 32px;
+          font-size: 22px;
+          line-height: 28px;
+          padding-top: 50px;
+        }
+        a {
+          padding-left: 32px;
         }
       }
     }

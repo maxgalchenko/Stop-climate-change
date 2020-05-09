@@ -188,3 +188,106 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .HomeIssue {
+    .issueBlock {
+      background-image: url(./images/bg--desktop.jpg);
+      padding: 160px 128px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-items: center;
+      .StopClimateChange {
+        order: 2;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: 135px;
+        .PencilTitle {
+          font-size: 72px;
+          line-height: 76px;
+        }
+      }
+    }
+    &__card {
+      width: 45%;
+      margin-bottom: 0;
+      order: 1;
+      .BigTitle {
+        font-size: 44px;
+        line-height: 56px;
+        margin-bottom: 37px;
+      }
+    }
+
+    .takeAction {
+      padding: 0 160px 78px;
+      .RectangularTitle {
+        margin-bottom: 30px;
+      }
+      li {
+        margin-bottom: 0;
+        width: 25%;
+        &:not(:last-child) {
+          padding-right: 50px;
+        }
+        .BigTitle {
+          font-size: 28px;
+          line-height: 36px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .whatWeDo {
+      padding: 88px 160px 160px;
+      .RectangularTitle {
+        margin-bottom: 40px;
+      }
+      &__mission {
+        font-size: 44px;
+        line-height: 56px;
+        margin-bottom: 88px;
+      }
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        li {
+          width: 30%;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0;
+          padding-bottom: 32px;
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
+          img,
+          picture {
+            width: 100%;
+            display: block;
+          }
+          img {
+            transform: translateX(32px) translateY(-32px);
+          }
+          .BigTitle {
+            padding: 0 32px;
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 20px;
+          }
+          .SmallText {
+            padding: 0 32px;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 32px;
+          }
+          .ButtonRound {
+            width: 160px;
+            font-size: 18px;
+            margin-left: 32px !important;
+          }
+        }
+      }
+    }
+  }
+}

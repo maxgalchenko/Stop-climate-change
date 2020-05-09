@@ -39,3 +39,23 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .AboutIssue {
+    padding: 80px 160px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('./images/bg--desktop.jpg');
+    .PencilTitle {
+      font-size: 72px;
+      line-height: 76px;
+    }
+    .RectangularTitle {
+      margin-bottom: 20px;
+    }
+    &__card {
+      width: 50%;
+      transform: translateY(140px);
+    }
+  }
+}

@@ -68,6 +68,8 @@
     padding: 64px;
     justify-content: space-between;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     .PencilTitle {
       font-size: 44px;
       line-height: 46px;
@@ -77,6 +79,63 @@
     &__buttonsList,
     .PencilTitle {
       width: 48%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .StoriesOfOurWork {
+    padding: 78px 160px 128px;
+    max-width: 100%;
+    display: flex;
+    .PencilTitle {
+      margin-bottom: 0;
+    }
+    article {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      picture {
+        width: 48%;
+      }
+    }
+    &__buttonsList {
+      font-size: 16px;
+      line-height: 30px;
+      li {
+        padding-right: 100px;
+        button {
+          padding-left: 64px;
+        }
+      }
+    }
+    .carImg__wrap {
+      width: 48%;
+    }
+    &__text {
+      width: 48%;
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .BigTitle {
+      margin-bottom: 0;
+      font-size: 44px;
+      line-height: 56px;
+      width: 48%;
+      position: absolute;
+      bottom: 110px;
+    }
+    .ButtonRound {
+      height: 48px;
+      width: 200px;
+      position: absolute;
+      bottom: 40px;
+    }
+    &__card {
+      padding: 64px;
+      font-size: 28px;
+      line-height: 36px;
     }
   }
 }

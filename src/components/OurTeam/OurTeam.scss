@@ -72,3 +72,27 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .OurTeam {
+    padding: 128px 160px;
+    .textWrap {
+      margin-bottom: 91px;
+    }
+    .RectangularTitle {
+      margin-bottom: 32px;
+    }
+    .BigTitle {
+      font-size: 44px;
+      line-height: 56px;
+      margin-bottom: 0;
+    }
+    .SmallText {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__item {
+      width: 30%;
+    }
+  }
+}

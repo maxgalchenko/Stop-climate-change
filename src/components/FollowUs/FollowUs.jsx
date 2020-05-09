@@ -3,15 +3,23 @@ import './FollowUs.scss';
 import PencilTitle from '../../ui/PencilTitle/PencilTitle';
 import BigTitle from '../../ui/BigTitle/BigTitle';
 import SmallText from '../../ui/SmallText/SmallText';
-import { instagram, twitter, youtube, postImg, facebook, rss } from './images';
+import {
+  instagram,
+  twitter,
+  youtube,
+  postImg,
+  postImgDesktop,
+  facebook,
+  rss,
+} from './images';
 
 const FollowUs = () => {
   const dataSocialsList = [
-    { icon: instagram, altText: 'instagram', href: 'instagram.com' },
-    { icon: twitter, altText: 'twitter', href: 'twitter.com' },
-    { icon: youtube, altText: 'youtube', href: 'youtube.com' },
-    { icon: facebook, altText: 'facebook', href: 'facebook.com' },
-    { icon: rss, altText: 'rss', href: 'rss.com' },
+    { icon: instagram, altText: 'instagram', href: 'https://instagram.com' },
+    { icon: twitter, altText: 'twitter', href: 'https://twitter.com' },
+    { icon: youtube, altText: 'youtube', href: 'https://youtube.com' },
+    { icon: facebook, altText: 'facebook', href: 'https://facebook.com' },
+    { icon: rss, altText: 'rss', href: 'https://rss.com' },
   ];
 
   const renderSocialsList = dataSocialsList.map(
@@ -40,7 +48,10 @@ const FollowUs = () => {
           <a href='/'>Continue reading this post</a>
         </div>
 
-        <img src={postImg} alt='' />
+        <picture>
+          <source media='(min-width: 1440px)' srcset={postImgDesktop} />
+          <img src={postImg} alt='' />
+        </picture>
       </article>
     </section>
   );

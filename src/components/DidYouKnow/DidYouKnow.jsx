@@ -31,8 +31,9 @@ const DidYouKnow = () => {
       <div className='didYouKnow__row'>
         <BigTitle text={title} />
         <a
-          href='twitter.com'
+          href='https://twitter.com/'
           target='_blank'
+          rel='noopener noreferrer'
           className='didYouKnow__socialIcon socialIcon--twitter'
         >
           twitter link
@@ -42,8 +43,9 @@ const DidYouKnow = () => {
       <div className='didYouKnow__row'>
         <SmallText text={text} />
         <a
-          href='facebook.com'
+          href='https://tfacebook.com/'
           target='_blank'
+          rel='noopener noreferrer'
           className='didYouKnow__socialIcon socialIcon--facebook'
         >
           facebook link

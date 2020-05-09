@@ -10,3 +10,12 @@
   text-align: center;
   padding: 20px auto;
 }
+
+@media (min-width: 1440px) {
+  .Logo {
+    .BigTitle {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}

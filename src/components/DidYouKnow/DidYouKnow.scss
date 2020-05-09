@@ -108,3 +108,45 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .DidYouKnow {
+    background-image: url('./images/bg--desktop.jpg');
+    padding: 128px 160px;
+    max-height: 1400px;
+    .PencilTitle {
+      font-size: 72px;
+      line-height: 76px;
+      margin-bottom: 42px;
+      width: 40%;
+      margin-right: 5%;
+    }
+    .didYouKnow {
+      width: 55%;
+      &__socialIcon {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+      }
+      &__item {
+        padding: 64px;
+      }
+      &__row {
+        .BigTitle {
+          font-size: 55px;
+          line-height: 56px;
+          margin-bottom: 5px;
+        }
+        .SmallText {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+    .ButtonRound {
+      width: 200px;
+      height: 48px;
+      font-size: 18px;
+    }
+  }
+}

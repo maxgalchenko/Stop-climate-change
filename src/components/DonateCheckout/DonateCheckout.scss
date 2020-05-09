@@ -99,13 +99,13 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    .yourInformation {
-      legend {
-        font-size: 28px;
-        line-height: 36px;
-        margin-bottom: 30px;
-      }
+
+    legend {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 30px;
     }
+
     &__instruction {
       font-size: 28px;
       line-height: 36px;
@@ -117,6 +117,35 @@
     }
     &__goBack {
       font-size: 16px;
+    }
+    .DonateInput {
+      font-size: 14px;
+      margin-bottom: 20px;
+      input {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .DonateCheckout {
+    background-image: url('./images/bg--desktop.jpg');
+    padding: 80px 160px 128px;
+    display: flex;
+    justify-content: space-between;
+
+    .PencilTitle {
+      font-size: 72px;
+      line-height: 76px;
+      margin-bottom: 0;
+      order: 2;
+      width: 45%;
+      padding: 0;
+    }
+    form {
+      width: 50%;
+      order: 1;
     }
   }
 }
