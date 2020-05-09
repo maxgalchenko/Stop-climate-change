@@ -5,7 +5,7 @@ import './Logo.scss';
 
 const Logo = () => {
   return (
-    <Link to='/' className='Logo'>
+    <Link to='/Stop-climate-change/' className='Logo'>
       <BigTitle text='The Green' />
       <BigTitle text='Trees Initiative' />
     </Link>

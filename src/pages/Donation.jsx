@@ -8,9 +8,9 @@ const Donation = () => {
   return (
     <section className='Donation'>
       <Switch>
-        <Route path='/donate/checkout' component={DonateCheckout} />
-        <Route path='/donate/payment' component={DonatePayment} />
-        <Route path='/donate' exact component={Donate1} />
+        <Route path='/Stop-climate-change/donate/checkout' component={DonateCheckout} />
+        <Route path='/Stop-climate-change/donate/payment' component={DonatePayment} />
+        <Route path='/Stop-climate-change/donate' exact component={Donate1} />
       </Switch>
     </section>
   );

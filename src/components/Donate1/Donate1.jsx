@@ -90,7 +90,7 @@ const Donate1 = () => {
         </fieldset>
 
         <div className='buttonsWrap'>
-          <Link to='/aboutUs/' className='cancel-btn'>
+          <Link to='/Stop-climate-change/aboutUs/' className='cancel-btn'>
             Cancel
           </Link>
           <ButtonRound text='Go to checkout' to='/donate/checkout' />

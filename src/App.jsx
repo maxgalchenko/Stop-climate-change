@@ -18,11 +18,11 @@ const App = () => {
         <Header />
 
         <Switch>
-          <Route path='/aboutUs' component={About} />
-          <Route path='/news' component={News} />
-          <Route path='/ourStories' component={Stories} />
-          <Route path='/donate' component={Donation} />
-          <Route path='/' component={Home} />
+          <Route path='/Stop-climate-change/aboutUs' component={About} />
+          <Route path='/Stop-climate-change/news' component={News} />
+          <Route path='/Stop-climate-change/ourStories' component={Stories} />
+          <Route path='/Stop-climate-change/donate' component={Donation} />
+          <Route path='/Stop-climate-change/' component={Home} />
         </Switch>
 
         <Subscribe />

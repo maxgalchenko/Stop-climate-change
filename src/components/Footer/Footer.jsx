@@ -15,10 +15,10 @@ const Footer = () => {
   ];
 
   const learnMoreData = [
-    { title: 'The issue', href: '/' },
-    { title: 'How we help', href: '/aboutUs' },
-    { title: 'Get involved', href: '/donate' },
-    { title: 'Latest news', href: '/news' },
+    { title: 'The issue', href: '/Stop-climate-change/' },
+    { title: 'How we help', href: '/Stop-climate-change/aboutUs' },
+    { title: 'Get involved', href: '/Stop-climate-change/donate' },
+    { title: 'Latest news', href: '/Stop-climate-change/news' },
   ];
 
   const renderFolowUsList = followUsData.map(({ title, href }, index) => (

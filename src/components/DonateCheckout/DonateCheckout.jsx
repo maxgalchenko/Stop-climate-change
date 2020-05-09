@@ -81,7 +81,7 @@ const DonateCheckout = () => {
         </p>
         <ButtonRound text='Process Payment' to='/donate/payment' />
 
-        <Link className='DonateCheckout__goBack' to='/donate'>
+        <Link className='DonateCheckout__goBack' to='/Stop-climate-change/donate'>
           Go back
         </Link>
       </form>

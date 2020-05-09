@@ -13,7 +13,7 @@ const Header = () => {
         <Navigation />
       </div>
 
-      <ButtonRound text='Donate today' to='/donate' exact />
+      <ButtonRound text='Donate today' to='/Stop-climate-change/donate' exact />
     </header>
   );
 
@@ -25,13 +25,13 @@ const Header = () => {
 
   return (
     <Switch>
-      <Route path='/donate' exact>
+      <Route path='/Stop-climate-change/donate' exact>
         {donatePageHeader}
       </Route>
       <Route path='/donate-checkout' exact>
         {donatePageHeader}
       </Route>
-      <Route path='/'>{usualHeader}</Route>
+      <Route path='/Stop-climate-change/'>{usualHeader}</Route>
     </Switch>
   );
 };
