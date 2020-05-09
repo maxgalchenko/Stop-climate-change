@@ -79,7 +79,7 @@ const DonateCheckout = () => {
         <p className='DonateCheckout__instruction'>
           Click the button to confirm your donation of $10, recurring monthly.
         </p>
-        <ButtonRound text='Process Payment' to='/donate/payment' />
+        <ButtonRound text='Process Payment' to='/Stop-climate-change/donate/payment' />
 
         <Link className='DonateCheckout__goBack' to='/Stop-climate-change/donate'>
           Go back
