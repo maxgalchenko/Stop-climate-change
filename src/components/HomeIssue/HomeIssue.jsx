@@ -56,56 +56,69 @@ const HomeIssue = () => {
   console.log(window.innerWidth);
 
   const renderTakeActionList = takeActionData.map(({ title, descr }, index) => (
-    <li className='takeAction__item' key={index}>
+    <li className="takeAction__item" key={index}>
       <BigTitle text={title} />
       <SmallText text={descr} />
     </li>
   ));
 
-  const renderWhatWeDoList = whatWeDoData.map(
-    ({ src, title, srcTablet }, index) => (
-      <li className='whatWeDo__item' key={index}>
-        <picture>
-          <source media='(min-width: 1440px)' srcset={srcTablet} />
-          <source media='(min-width: 768px)' srcset={srcTablet} />
-          <img className='whatWeDo__img' src={src} alt='' />
-        </picture>
+  const renderWhatWeDoList = whatWeDoData.map(({ src, title, srcTablet }, index) => (
+    <li className="whatWeDo__item" key={index}>
+      <picture>
+        <source media="(min-width: 1440px)" srcset={srcTablet} />
+        <source media="(min-width: 768px)" srcset={srcTablet} />
+        <img className="whatWeDo__img" src={src} alt="" />
+      </picture>
 
-        <BigTitle text={title} />
-        <SmallText text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet.' />
-        <ButtonRound text='Read more' to='/' />
-      </li>
-    )
-  );
+      <BigTitle text={title} />
+      <SmallText text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi felis, auctor vitae vestibulum vel, consequat eu dolor. Nam pellentesque euismod laoreet." />
+      <ButtonRound text="Read more" to="/" />
+    </li>
+  ));
 
   return (
-    <section className='HomeIssue'>
-      <section className='issueBlock'>
+    <section className="HomeIssue">
+      <section className="issueBlock">
         <StopClimateChange />
 
-        <div className='HomeIssue__card'>
-          <RectangularTitle text='THE ISSUE' />
-          <BigTitle text='Climate change poses the biggest threat to women in developing nations.' />
+        <div className="HomeIssue__card">
+          <RectangularTitle text="THE ISSUE" />
+          <BigTitle text="Climate change poses the biggest threat to women in developing nations." />
 
-          <a href='#' className='readMore'>
+          <button
+            type="button"
+            className="readMore"
+            style={{
+              background: 'none',
+              border: 'none',
+              padding: 0,
+              color: 'inherit',
+              textDecoration: 'underline',
+              cursor: 'pointer',
+            }}
+            aria-label="Read more about this environmental and social cause"
+            onClick={() => {
+              /* TODO: Add navigation or modal logic here */
+            }}
+          >
             Read more about this environmental and social cause
-          </a>
+          </button>
         </div>
       </section>
 
-      <section className='takeAction'>
-        <RectangularTitle text='TAKE ACTION' />
+      <section className="takeAction">
+        <RectangularTitle text="TAKE ACTION" />
         <ul>{renderTakeActionList}</ul>
       </section>
 
-      <section className='whatWeDo'>
-        <h3 className='whatWeDo__title'>WHAT WE DO</h3>
-        <p className='whatWeDo__mission'>
-          Our mission is to create sustainable work for women in developing
-          nations while helping to slow climate change.
+      <section className="whatWeDo">
+        <h3 className="whatWeDo__title">WHAT WE DO</h3>
+        <p className="whatWeDo__mission">
+          Our mission is to create sustainable work for women in developing nations while helping to
+          slow climate change.
         </p>
 
-        <ul className='whatWeDo__list'>{renderWhatWeDoList}</ul>
+        <ul className="whatWeDo__list">{renderWhatWeDoList}</ul>
       </section>
     </section>
   );

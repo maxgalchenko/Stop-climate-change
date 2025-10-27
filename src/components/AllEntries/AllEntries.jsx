@@ -87,14 +87,30 @@ const AllEntries = () => {
     data.map(({ text, linkText, img, category }, index) => (
       <li key={index} className={category}>
         <figure>
-          <img src={img} alt='' />
+          <img src={img} alt="" />
 
           <figcaption>
             <RectangularTitle text={category} />
             {text}
           </figcaption>
         </figure>
-        <a href='#'>{linkText}</a>
+        <button
+          type="button"
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: 0,
+            color: 'inherit',
+            textDecoration: 'underline',
+            cursor: 'pointer',
+          }}
+          aria-label={linkText}
+          onClick={() => {
+            /* TODO: Add navigation or modal logic here */
+          }}
+        >
+          {linkText}
+        </button>
       </li>
     ));
 
@@ -120,13 +136,13 @@ const AllEntries = () => {
   };
 
   return (
-    <section className='AllEntries'>
-      <div className='titleFilters__wrap'>
-        <PencilTitle text='ALL ENTRIES' />
-        <ul className='AllEntries__filters'>{renderFilters}</ul>
+    <section className="AllEntries">
+      <div className="titleFilters__wrap">
+        <PencilTitle text="ALL ENTRIES" />
+        <ul className="AllEntries__filters">{renderFilters}</ul>
       </div>
 
-      <ul className='AllEntries__entriesList'>{renderPosts}</ul>
+      <ul className="AllEntries__entriesList">{renderPosts}</ul>
     </section>
   );
 };
